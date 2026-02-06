@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz 18, Ferreira 🎉</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PLAYER YOUTUBE INVISÍVEL -->
+<iframe id="ytMusic" width="0" height="0" src="" allow="autoplay"></iframe>
+
+<!-- TELA DE SENHA -->
+<div id="senhaTela" class="senha-tela">
+  <div class="senha-box">
+    <h2>🎁 Área secreta</h2>
+    <p>Digite a senha para entrar</p>
+    <input type="password" id="senhaInput" placeholder="Senha">
+    <button onclick="verificarSenha()">Entrar</button>
+    <p id="erroSenha">Senha incorreta 💔</p>
+  </div>
+</div>
+
+<!-- BOTÃO TRAILER -->
+<button id="btnFull" class="btn-full" onclick="ativarTrailer()">▶️ Assistir trailer</button>
+
+<!-- CONTEÚDO -->
+<div id="conteudo" style="display:none;">
+  <div class="card fade-cinema">
+    <h1>🎂 Feliz 18 Anos</h1>
+    <h2>Ferreira 💖</h2>
+
+    <div class="contador-box">
+      <p class="contador-texto">🎁 Algo especial está chegando...</p>
+      <h3 id="contador"></h3>
+    </div>
+
+    <div id="textoMusica" class="texto-musica"></div>
+  </div>
+</div>
+
+<canvas id="confetti"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
