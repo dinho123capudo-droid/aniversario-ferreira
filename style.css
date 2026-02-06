@@ -1,0 +1,126 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffb6c1, #ffe4e1);
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SENHA */
+.senha-tela {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #ffb6c1, #ffe4e1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.senha-box {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 320px;
+}
+
+.senha-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: 1px solid #ff69b4;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.senha-box button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  background: #ff69b4;
+  color: white;
+}
+
+#erroSenha {
+  display: none;
+  color: red;
+  font-size: 0.85rem;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  padding: 30px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* CONTADOR */
+.contador-box {
+  background: #fff0f5;
+  border: 2px dashed #ff69b4;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+/* TEXTO CINEMA */
+.texto-musica {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  min-height: 70px;
+  font-weight: bold;
+  background: linear-gradient(90deg,#ff69b4,#ffd1dc,#ff69b4);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: brilho 3s linear infinite;
+}
+
+@keyframes brilho {
+  from { background-position: 0%; }
+  to { background-position: 200%; }
+}
+
+/* CINEMA */
+body.cinema {
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+}
+
+.fade-cinema {
+  animation: cinemaFade 2s ease forwards;
+}
+
+@keyframes cinemaFade {
+  from { opacity: 0; transform: scale(1.05); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* TRAILER */
+.btn-full {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 999;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 30px;
+}
+
+canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
